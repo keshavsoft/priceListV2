@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KeshavSoft Price List Manager</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Segoe UI, sans-serif;
+    background:#0f172a;
+    color:#e2e8f0;
+    line-height:1.6;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+section{
+    margin:60px 0;
+}
+
+h2{
+    margin-bottom:20px;
+    color:#38bdf8;
+}
+
+.hero{
+    text-align:center;
+    padding:100px 20px;
+    background:linear-gradient(135deg,#1e293b,#0f172a);
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    color:#cbd5e1;
+}
+
+.version{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 20px;
+    background:#38bdf8;
+    color:black;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.tech-stack{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.tech{
+    background:#1e293b;
+    padding:10px 18px;
+    border-radius:25px;
+    border:1px solid #334155;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:#1e293b;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+th,td{
+    padding:15px;
+    border-bottom:1px solid #334155;
+    text-align:left;
+}
+
+th{
+    background:#0f172a;
+    color:#38bdf8;
+}
+
+.endpoint{
+    background:#1e293b;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+.method{
+    display:inline-block;
+    padding:5px 12px;
+    border-radius:5px;
+    font-weight:bold;
+    margin-right:10px;
+}
+
+.get{
+    background:#16a34a;
+    color:white;
+}
+
+.post{
+    background:#2563eb;
+    color:white;
+}
+
+.code{
+    background:#020617;
+    padding:15px;
+    border-radius:10px;
+    overflow:auto;
+    margin:10px 0;
+}
+
+.timeline{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.step{
+    background:#1e293b;
+    padding:20px;
+    border-radius:10px;
+    min-width:180px;
+    text-align:center;
+}
+
+.arrow{
+    font-size:25px;
+    color:#38bdf8;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    margin-top:50px;
+    border-top:1px solid #334155;
+    color:#94a3b8;
+}
+</style>
+
+</head>
+<body>
+
+<section class="hero">
+    <div class="container">
+        <h1>KeshavSoft Price List Manager</h1>
+        <p>Schema-Driven Stock & Price List Management System</p>
+        <div class="version">Version 1.1.2</div>
+    </div>
+</section>
+
+<div class="container">
+
+<section>
+    <h2>Overview</h2>
+    <p>
+        KeshavSoft Price List Manager is a web application built with
+        Express.js and lowdb to manage Stock Items and Price Lists.
+        The application is schema-driven, allowing forms, tables,
+        validations, and UI components to be generated automatically
+        from JSON schema files.
+    </p>
+</section>
+
+<section>
+    <h2>Key Features</h2>
+
+    <div class="card-grid">
+
+        <div class="card">
+            <h3>JSON Database</h3>
+            <p>Uses lowdb for lightweight JSON-based storage.</p>
+        </div>
+
+        <div class="card">
+            <h3>Schema Driven</h3>
+            <p>Forms, validations, and tables come from schema files.</p>
+        </div>
+
+        <div class="card">
+            <h3>Auto UI Generation</h3>
+            <p>Generate screens automatically from definitions.</p>
+        </div>
+
+        <div class="card">
+            <h3>No Database Server</h3>
+            <p>No MySQL or PostgreSQL installation required.</p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Technologies Used</h2>
+
+    <div class="tech-stack">
+        <div class="tech">Express.js</div>
+        <div class="tech">lowdb</div>
+        <div class="tech">HTML</div>
+        <div class="tech">CSS</div>
+        <div class="tech">JavaScript</div>
+        <div class="tech">KSTable</div>
+        <div class="tech">KSHeader</div>
+    </div>
+</section>
+
+<section>
+    <h2>Project Structure</h2>
+
+    <table>
+        <tr>
+            <th>File</th>
+            <th>Purpose</th>
+        </tr>
+        <tr>
+            <td>app.js</td>
+            <td>Starts the application and loads configuration</td>
+        </tr>
+        <tr>
+            <td>server.js</td>
+            <td>Creates and runs HTTP server</td>
+        </tr>
+        <tr>
+            <td>routes.js</td>
+            <td>Serves frontend files</td>
+        </tr>
+        <tr>
+            <td>port.js</td>
+            <td>Handles port configuration</td>
+        </tr>
+        <tr>
+            <td>configLoader.js</td>
+            <td>Loads configuration files</td>
+        </tr>
+        <tr>
+            <td>config.json</td>
+            <td>Application configuration</td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>Schema Configuration</h2>
+
+    <div class="card">
+        <h3>Config/Schemas/StockItems.json</h3>
+        <p>
+            Defines StockItemName, StockItemReservedName,
+            StockItemType, validation rules, and table settings.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>API Endpoints</h2>
+
+    <div class="endpoint">
+        <span class="method get">GET</span>
+        /Api/v1/StockItems/ShowAll
+        <p>Returns all stock items.</p>
+    </div>
+
+    <div class="endpoint">
+        <span class="method post">POST</span>
+        /Api/v1/StockItems/Insert
+        <p>Adds a new stock item.</p>
+    </div>
+</section>
+
+<section>
+    <h2>Public Pages</h2>
+
+    <table>
+        <tr>
+            <th>URL</th>
+            <th>Purpose</th>
+        </tr>
+        <tr>
+            <td>/</td>
+            <td>Home Page</td>
+        </tr>
+        <tr>
+            <td>/v1/</td>
+            <td>Read Only Stock Item List</td>
+        </tr>
+        <tr>
+            <td>/v2/</td>
+            <td>View and Add Stock Items</td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>How To Run</h2>
+
+    <h3>1. Install Packages</h3>
+    <div class="code">
+npm install
+    </div>
+
+    <h3>2. Generate Database Files</h3>
+    <div class="code">
+node Scripts/generateDataFromSchemas.js
+    </div>
+
+    <h3>Creates</h3>
+    <div class="code">
+Data/StockItems.json
+    </div>
+
+    <h3>3. Start Server</h3>
+    <div class="code">
+npm start
+    </div>
+
+    <h3>Server URL</h3>
+    <div class="code">
+http://localhost:3001
+    </div>
+</section>
+
+<section>
+    <h2>Workflow</h2>
+
+    <div class="timeline">
+
+        <div class="step">Schema Files</div>
+        <div class="arrow">→</div>
+
+        <div class="step">JSON Database</div>
+        <div class="arrow">→</div>
+
+        <div class="step">API Layer</div>
+        <div class="arrow">→</div>
+
+        <div class="step">Frontend Pages</div>
+        <div class="arrow">→</div>
+
+        <div class="step">Generated UI</div>
+
+    </div>
+</section>
+
+
+</div>
+
+<footer>
+    <h3>KeshavSoft Price List Manager</h3>
+    <p>Documentation written and maintained by <strong>Hujur</strong></p>
+</footer>
+
+</body>
+</html>
