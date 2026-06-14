@@ -47,7 +47,7 @@
   },
   "PrimarykeyTableNames": [],
   "PrimarykeyTables": [],
-  "columnsConfig": [
+  "columnsConfig1": [
     {
       "columnName": "StockItemName",
       "title": "StockItemName",
@@ -60,6 +60,190 @@
     {
       "columnName": "StockBaseUnits",
       "title": "StockBaseUnits",
+      "cellConfig": {
+        "width": "150px"
+      },
+      "isSearchable": false,
+      "dataListSource": "Dates.Date"
+    }
+  ],
+  "columnsConfig2": [
+    {
+      "columnName": "StockItemName",
+      "title": "StockItemName",
+      "cellConfig": {
+        "width": "150px"
+      },
+      "isSearchable": false,
+      "dataListSource": "Dates.Date"
+    },
+    {
+      "columnName": "StockBaseUnits",
+      "title": "StockBaseUnits",
+      "cellConfig": {
+        "width": "150px"
+      },
+      "isSearchable": false,
+      "dataListSource": "Dates.Date"
+    },
+    {
+      "columnName": "StockCategory",
+      "title": "StockCategory",
+      "cellConfig": {
+        "width": "150px"
+      },
+      "isSearchable": false,
+      "dataListSource": "Dates.Date"
+    },
+    {
+      "columnName": "StockGstApplicable",
+      "title": "StockGstApplicable",
+      "cellConfig": {
+        "width": "150px"
+      },
+      "isSearchable": false,
+      "dataListSource": "Dates.Date"
+    },
+    {
+      "columnName": "StockGstTypeOfSupply",
+      "title": "StockGstTypeOfSupply",
+      "cellConfig": {
+        "width": "150px"
+      },
+      "isSearchable": false,
+      "dataListSource": "Dates.Date"
+    },
+    {
+      "columnName": "StockBaseUnits",
+      "title": "StockBaseUnits",
+      "cellConfig": {
+        "width": "150px"
+      },
+      "isSearchable": false,
+      "dataListSource": "Dates.Date"
+    },
+    {
+      "columnName": "sgstRate",
+      "title": "sgstRate",
+      "cellConfig": {
+        "width": "150px"
+      },
+      "isSearchable": false,
+      "dataListSource": "Dates.Date"
+    },
+    {
+      "columnName": "cgstRate",
+      "title": "cgstRate",
+      "cellConfig": {
+        "width": "150px"
+      },
+      "isSearchable": false,
+      "dataListSource": "Dates.Date"
+    },
+    {
+      "columnName": "TaxPer",
+      "title": "TaxPer",
+      "cellConfig": {
+        "width": "150px"
+      },
+      "isSearchable": false,
+      "dataListSource": "Dates.Date"
+    },
+    {
+      "columnName": "Uom",
+      "title": "Uom",
+      "cellConfig": {
+        "width": "150px"
+      },
+      "isSearchable": false,
+      "dataListSource": "Dates.Date"
+    }
+  ],
+  "columnsConfig": [
+    {
+      "columnName": "StockItemName",
+      "title": "Item Name",
+      "cellConfig": {
+        "width": "150px"
+      },
+      "isSearchable": false,
+      "dataListSource": "Dates.Date"
+    },
+    {
+      "columnName": "StockBaseUnits",
+      "title": "Base Unit",
+      "cellConfig": {
+        "width": "150px"
+      },
+      "isSearchable": false,
+      "dataListSource": "Dates.Date"
+    },
+    {
+      "columnName": "StockCategory",
+      "title": "Category",
+      "cellConfig": {
+        "width": "150px"
+      },
+      "isSearchable": false,
+      "dataListSource": "Dates.Date"
+    },
+    {
+      "columnName": "StockGstApplicable",
+      "title": "Gst Applicable",
+      "cellConfig": {
+        "width": "150px"
+      },
+      "isSearchable": false,
+      "dataListSource": "Dates.Date"
+    },
+    {
+      "columnName": "StockGstTypeOfSupply",
+      "title": "Gst Type Of Supply",
+      "cellConfig": {
+        "width": "150px"
+      },
+      "isSearchable": false,
+      "dataListSource": "Dates.Date"
+    },
+    {
+      "columnName": "StockBaseUnits",
+      "title": "Base Unit",
+      "cellConfig": {
+        "width": "150px"
+      },
+      "isSearchable": false,
+      "dataListSource": "Dates.Date"
+    },
+    {
+      "columnName": "sgstRate",
+      "title": "sgstRate",
+      "cellConfig": {
+        "width": "150px"
+      },
+      "isSearchable": false,
+      "dataListSource": "Dates.Date"
+    },
+    {
+      "columnName": "cgstRate",
+      "title": "cgstRate",
+      "cellConfig": {
+        "width": "150px"
+      },
+      "isSearchable": false,
+      "dataListSource": "Dates.Date"
+    },
+    {
+      "columnName": "TaxPer",
+      "title": "TaxPer",
+      "cellConfig": {
+        "width": "150px"
+      },
+      "isSearchable": false,
+      "dataListSource": "Dates.Date"
+    },
+    {
+      "columnName": "Uom",
+      "title": "Uom",
       "cellConfig": {
         "width": "150px"
       },
