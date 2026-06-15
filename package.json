@@ -1,6 +1,6 @@
 {
   "name": "priceListV2",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "",
   "main": "app.js",
   "type": "module",
@@ -13,8 +13,10 @@
   "dependencies": {
     "@keshavsoft/kschema": "^1.17.12",
     "body-parser": "^2.2.0",
+    "dotenv": "^17.4.2",
     "express": "^5.1.0",
-    "lowdb": "^7.0.1"
+    "lowdb": "^7.0.1",
+    "nodemailer": "^9.0.0"
   },
   "devDependencies": {
     "@keshavsoft/kschema-api-check": "^1.12.1",
@@ -32,8 +34,8 @@
     "kschema-fs-api-gen-actions": "^1.7.6",
     "tailwind-header-dom": "^4.6.1",
     "tailwind-table-dom": "^3.12.2",
+    "tailwind-table-dom-comp": "^1.4.1",
     "tailwind-todo": "^1.5.9",
-    "tailwind-vertical-dom": "^2.2.1",
-    "tailwind-table-dom-comp": "^1.4.1"
+    "tailwind-vertical-dom": "^2.2.1"
   }
 }

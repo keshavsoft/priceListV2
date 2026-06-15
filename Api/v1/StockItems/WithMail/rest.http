@@ -1,5 +1,5 @@
 
-POST http://localhost:3001/Api/v1/StockItems/Insert
+POST http://localhost:3001/Api/v1/StockItems/WithMail
 Content-Type: application/json
 
 {

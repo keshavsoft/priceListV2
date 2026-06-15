@@ -249,6 +249,11 @@
       },
       "isSearchable": false,
       "dataListSource": "Dates.Date"
+    },
+    {
+      "field": "pk",
+      "title": "pk",
+      "primary": true
     }
   ]
 }
